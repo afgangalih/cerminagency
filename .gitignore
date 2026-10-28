@@ -1,0 +1,77 @@
+﻿# ==========================================
+# Dependencies
+# ==========================================
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# ==========================================
+# Next.js & Build Output
+# ==========================================
+/.next/
+/out/
+/build
+/dist
+*.tsbuildinfo
+next-env.d.ts
+
+# ==========================================
+# Environment Variables & Secrets
+# ==========================================
+.env
+.env*.local
+.env.production
+.env.staging
+*.pem
+*.key
+*.cert
+
+# ==========================================
+# Agent & Local Workspace Configurations
+# ==========================================
+.agents/
+skills-lock.json
+scratch/
+.tempmediaStorage/
+.gemini/
+
+# ==========================================
+# IDE & Editor Files
+# ==========================================
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ==========================================
+# Logs & Diagnostic
+# ==========================================
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+*.log
+
+# ==========================================
+# OS Generated Files
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ==========================================
+# Deployment & Hosting
+# ==========================================
+.vercel
+/coverage

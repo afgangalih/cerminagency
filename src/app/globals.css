@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: #ffffff;
+    --foreground: #09090b;
+
+    --card: #ffffff;
+    --card-foreground: #09090b;
+
+    --popover: #ffffff;
+    --popover-foreground: #09090b;
+
+    --primary: #09090b;
+    --primary-foreground: #fafafa;
+
+    --secondary: #f4f4f5;
+    --secondary-foreground: #18181b;
+
+    --muted: #f4f4f5;
+    --muted-foreground: #71717a;
+
+    --accent: #f4f4f5;
+    --accent-foreground: #18181b;
+
+    --destructive: #ef4444;
+    --destructive-foreground: #fafafa;
+
+    --border: #e4e4e7;
+    --input: #e4e4e7;
+    --ring: #18181b;
+
+    --radius: 0.625rem;
+  }
+
+  * {
+    border-color: var(--border);
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-feature-settings: "rlig" 1, "calt" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background-color: #18181b;
+    color: #fafafa;
+  }
+}
+
+/* Custom Scrollbar for Kanban and Modals */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4d4d8;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1aa;
+}
